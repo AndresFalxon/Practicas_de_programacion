@@ -4,14 +4,223 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Instagram</title>
+<style media-screen>
+
+body 
+{
+    margin:0;
+    font-family: Arial;
+    background-color: whitesmoke;
+}
+
+.post-lits
+{
+display: grid;
+grid-template-columns: repeat(3, minMax(100px, 293px));
+justify-content: center;
+grid-gap: 28px;
+}
+
+.post
+{
+cursor: pointer;
+position: relative;
+display: block;
+
+}
+
+.post-image
+{
+    margin:0;
+}
+
+.post-image img
+{
+width: 100%;
+vertical-align: top;
+}
+
+.post-overlay
+{
+background: rgba(0, 0, 0, .4);
+position:absolute ;
+left: 0;
+right: 0;
+bottom: 0;
+top: 0;
+display: none;
+align-items: center;
+justify-content: center;
+color:white;
+text-align: center;
+}
+
+.post:hover .post-overlay
+{
+    display: flex;
+}
+
+.post-likes,.post-coment
+{
+    width: 80%;
+    margin: 5px;
+    font-weight: bold;
+    text-align: center;
+    display: inline-block;
+}
+
+    @media screen and(max-width: 768px)
+    {
+        .post-lits
+        {
+            grid-gap: 3px;
+        }
+    }
+
+.header
+{
+    overflow: hidden;
+    display: center;
+    padding: 10px;
+    text-align: left;
+    font-family: 'Cabin', ;
+    font-size: 10px;
+    background-color:white;
+    margin: 0;
+    width: 98.5%;
+    height: 50px;
+    border:1px
+}
+
+.espacio
+{
+    background-color:whitesmoke;
+    width:50%;
+    height: 20px;
+}
+
+.espaciado2
+{
+    background-color:violet;
+    width:100%;
+    height: 90px;
+}
+
+.espacioarriba
+{
+    background-color:whitesmoke;
+    width:40%;
+    height: 20px;
+    margin-top: 1em;
+    padding-top: 1em;
+    border-top: thin dotted
+}
+
+.espacioabajo
+{
+    background-color:rgb(58, 68, 68);
+    widows: 98.5%;
+    height: 400px;
+}
+
+.publicaciones
+{
+    background-color:white;
+    width:40%;
+    height: 20px;
+}
+
+.box
+{
+    float:left;
+    width: 50px;
+    height: 50px;
+    padding-top: 10px;
+    display: inline-block;    
+}
+.espa
+{
+    width: 15%;
+    height: 20px;
+    float: left;
+
+}
+
+.texto
+{
+    padding: -10px;
+    width: 50px;
+    height: 50px;
+    float: left;
+    font-size: 20px;
+}
+
+.pu
+{
+    text-align: left;
+    padding: 40px;
+
+}
+
+.ig
+{
+    text-align: center;
+}
+
+.guar
+{
+    text-align: center;
+}
+
+.eti
+{
+    text-align: right;
+    
+}
+
+    .sepa
+    {
+        color: black; 
+        background-color: black; 
+        width:10%;
+        object-position: bottom;
+    }
+</style>
 </head>
 <body>
-    <section class="post-lits">
-        <a href="" class="post"></a>
-        <figure class="post-image">
-            <img src="o1.jpg" alt="" width="600" height="400">
+    <div class="header">
+        <div class="espa">
+        </div>
+        <div class="espacioarrriba">
+        </div>
+        <div class="box"> 
+            <img src="10.png" alt="" width="30" height="30">
+        </div>
+        <hr class="sepa" size="2px" color="black"/>
+        <div class="texto">
+            <p>Intagram </p>
+        </div>
+    </div>
+    <div class="espacioabajo">
+    </div>
 
+    <div class="espaciado2">
+<p class="pu">PUBLICAIONES</p>
+<P class="ig">IGTV</P>
+<P class="guar">GUARDADO</P>
+<P class="eti">ETIQUETADAS</P>
+
+    </div>
+    
+    <div class="publicaciones">
+    </div>
+
+    <section class="post-lits">
+        <a href="" class="post">
+        <figure class="post-image">
+            <img src="o1.jpg" alt="" width="800" height="300">
         </figure>
+
         <span class="post-overlay">
             <p>
                 <span class="post likes">150</span>
@@ -19,9 +228,9 @@
             </p>
         </span>
     </a>
-    <a href="" class="post"></a>
+    <a href="" class="post">
     <figure class="post-image">
-        <img src="o1.jpg" alt="" width="600" height="400">
+        <img src="o1.jpg" alt="" width="800" height="300">
 
     </figure>
     <span class="post-overlay">
@@ -31,9 +240,9 @@
         </p>
     </span>
 </a>
-<a href="" class="post"></a>
+<a href="" class="post">
 <figure class="post-image">
-    <img src="o1.jpg" alt="" width="600" height="400">
+    <img src="o1.jpg" alt="" width="800" height="300">
 
 </figure>
 <span class="post-overlay">
@@ -43,9 +252,9 @@
     </p>
 </span>
 </a>
-<a href="" class="post"></a>
+<a href="" class="post">
 <figure class="post-image">
-    <img src="marselo.jpg" alt="" width="600" height="400">
+    <img src="marselo.jpg" alt="" width="800" height="300">
 
 </figure>
 <span class="post-overlay">
@@ -55,9 +264,9 @@
     </p>
 </span>
 </a>
-<a href="" class="post"></a>
+<a href="" class="post">
 <figure class="post-image">
-    <img src="marselo.jpg" alt="" width="600" height="400">
+    <img src="marselo.jpg" alt="" width="800" height="300">
 
 </figure>
 <span class="post-overlay">
@@ -67,6 +276,53 @@
     </p>
 </span>
 </a>
-    <a href="" class="post"
+<a href="" class="post">
+    <figure class="post-image">
+        <img src="marselo.jpg" alt="" width="800" height="300">
+    
+    </figure>
+    <span class="post-overlay">
+        <p>
+            <span class="post likes">150</span>
+            <span class="post coment">10</span>
+        </p>
+    </span>
+    </a>
+
+<a href="" class="post">
+    <figure class="post-image">
+        <img src="02.jpg" alt="" width="800" height="300">
+    
+    </figure>
+    <span class="post-overlay">
+        <p>
+            <span class="post likes">150</span>
+            <span class="post coment">10</span>
+        </p>
+    </span>
+    </a><a href="" class="post">
+        <figure class="post-image">
+            <img src="02.jpg" alt="" width="800" height="300">
+        
+        </figure>
+        <span class="post-overlay">
+            <p>
+                <span class="post likes">150</span>
+                <span class="post coment">10</span>
+            </p>
+        </span>
+        </a>
+        <a href="" class="post">
+            <figure class="post-image">
+                <img src="02.jpg" alt="" width="800" height="300">
+            
+            </figure>
+            <span class="post-overlay">
+                <p>
+                    <span class="post likes">150</span>
+                    <span class="post coment">10</span>
+                </p>
+            </span>
+            </a>
 </body>
 </html>
